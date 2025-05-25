@@ -7,14 +7,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: DownloadBuildArtifacts@0
-  inputs:
-    buildType: current
-    downloadType: single
-    artifactName: drop
-    downloadPath: $(System.ArtifactsDirectory)
+- checkout: self
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
+    PathtoPublish: '$(Build.SourcesDirectory)'
+    ArtifactName: 'site'
