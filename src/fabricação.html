@@ -23,6 +23,19 @@
       <a href="https://villarta.com.br/">VILLARTA</a>
       <a href="https://villarta.com.br/contato/">CONTATO</a>
     </nav>
+   <script>
+     // Se não estiver logado, redireciona para login
+     if (localStorage.getItem('isLoggedIn') !== 'true') {
+       window.location.href = "login.html";
+     }
+     
+     // Função de logout
+     document.getElementById('logoutBtn').addEventListener('click', function() {
+       localStorage.removeItem('isLoggedIn');
+       window.location.href = "login.html";
+     });
+   </script>
+
   </header>
 
   <main class="conteudo">
