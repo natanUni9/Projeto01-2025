@@ -8,6 +8,12 @@
 </head>
 <body>
   <header>
+    <script>
+      if (localStorage.getItem('isLoggedIn') !== 'true') {
+        window.location.href = 'login.html';
+      }
+    </script>
+
     <div class="logo">VILLARTA</div>
     <nav>
       <a href="src/instalacao.html">INSTALAÇÃO</a>
