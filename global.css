@@ -78,8 +78,8 @@ body {
 
 .btn-login {
   background-color: transparent;
-  color: #333; /* ou a cor usada no menu */
-  border: 2px solid #333; /* mesma cor do texto ou borda do menu */
+  color: #333; 
+  border: 2px solid #333; 
   padding: 8px 16px;
   border-radius: 4px;
   font-size: 14px;
@@ -88,7 +88,7 @@ body {
 }
 
 .btn-login:hover {
-  background-color: #333; /* mesma cor do texto */
-  color: #fff; /* texto invertido para contraste */
+  background-color: #333; 
+  color: #fff; 
 }
 
