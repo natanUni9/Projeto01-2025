@@ -76,17 +76,19 @@ body {
     background-color: #0043b3;
   }
 
-#logoutBtn {
-  background-color: #002f87;
-  color: white;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
+.btn-login {
+  background-color: transparent;
+  color: #333; /* ou a cor usada no menu */
+  border: 2px solid #333; /* mesma cor do texto ou borda do menu */
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
   cursor: pointer;
-  margin-left: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#logoutBtn:hover {
-  background-color: #0043b3;
+.btn-login:hover {
+  background-color: #333; /* mesma cor do texto */
+  color: #fff; /* texto invertido para contraste */
 }
+
